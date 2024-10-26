@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/search">
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.navbar.Search"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_to_profile"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_search_to_submissions"
+            app:destination="@+id/SubmissionsFragment"/>
+        <action
+            android:id="@+id/action_search_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_search_to_solved2"
+            app:destination="@id/nav_Solved" />
+        <action
+            android:id="@+id/action_search_to_settings2"
+            app:destination="@id/nav_Settings" />
+        <action
+            android:id="@+id/action_search_to_logout2"
+            app:destination="@id/nav_Logout" />
+        <action
+            android:id="@+id/action_search_to_badges2"
+            app:destination="@id/nav_Badges" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.navbar.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_ProfileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SubmissionsFragment"
+        android:name="com.example.navbar.Submissions"
+        android:label="fragment_submissions"
+        tools:layout="@layout/fragment_submissions" >
+        <action
+            android:id="@+id/action_SubmissionsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navbar.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_Badges"
+        android:name="com.example.navbar.Badges"
+        android:label="fragment_badges"
+        tools:layout="@layout/fragment_badges" >
+        <action
+            android:id="@+id/action_nav_Badges_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Logout"
+        android:name="com.example.navbar.Logout"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" >
+        <action
+            android:id="@+id/action_nav_Logout_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Settings"
+        android:name="com.example.navbar.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_nav_Settings_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Solved"
+        android:name="com.example.navbar.Solved"
+        android:label="fragment_solved"
+        tools:layout="@layout/fragment_solved" >
+        <action
+            android:id="@+id/action_nav_Solved_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

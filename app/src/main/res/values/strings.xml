@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">navBar</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="hello_profile_fragment">Hello profile fragment</string>
+    <string name="hello_blank_fragment">Hello  fragment</string>
+
+</resources>
