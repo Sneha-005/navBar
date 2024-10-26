@@ -47,7 +47,7 @@
     <fragment
         android:id="@+id/SubmissionsFragment"
         android:name="com.example.navbar.Submissions"
-        android:label="fragment_submissions"
+        android:label="Submissions"
         tools:layout="@layout/fragment_submissions" >
         <action
             android:id="@+id/action_SubmissionsFragment_to_homeFragment"
@@ -56,12 +56,12 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.navbar.Home"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_Badges"
         android:name="com.example.navbar.Badges"
-        android:label="fragment_badges"
+        android:label="Badges"
         tools:layout="@layout/fragment_badges" >
         <action
             android:id="@+id/action_nav_Badges_to_homeFragment"
@@ -70,7 +70,7 @@
     <fragment
         android:id="@+id/nav_Logout"
         android:name="com.example.navbar.Logout"
-        android:label="fragment_logout"
+        android:label="Logout"
         tools:layout="@layout/fragment_logout" >
         <action
             android:id="@+id/action_nav_Logout_to_homeFragment"
@@ -79,7 +79,7 @@
     <fragment
         android:id="@+id/nav_Settings"
         android:name="com.example.navbar.Settings"
-        android:label="fragment_settings"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_nav_Settings_to_homeFragment"
@@ -88,7 +88,7 @@
     <fragment
         android:id="@+id/nav_Solved"
         android:name="com.example.navbar.Solved"
-        android:label="fragment_solved"
+        android:label="Solved"
         tools:layout="@layout/fragment_solved" >
         <action
             android:id="@+id/action_nav_Solved_to_homeFragment"
