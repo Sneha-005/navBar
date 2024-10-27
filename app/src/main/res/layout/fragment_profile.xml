@@ -1,20 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Profile">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="86dp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/aboutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
 
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/aboutTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/companyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/countryTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/rankingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/companyTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/reputationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reputation: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rankingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/schoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reputationTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/twitterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/schoolTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/githubTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/twitterTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/linkedInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedIn: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/githubTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,5 +4,6 @@
     <string name="drawer_close">Close Drawer</string>
     <string name="hello_profile_fragment">Hello profile fragment</string>
     <string name="hello_blank_fragment">Hello  fragment</string>
+    <string name="badge_icon_desc">Badge Icon</string>
 
 </resources>

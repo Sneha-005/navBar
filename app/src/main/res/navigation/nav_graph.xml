@@ -46,8 +46,8 @@
     </fragment>
     <fragment
         android:id="@+id/SubmissionsFragment"
-        android:name="com.example.navbar.Submissions"
         android:label="Submissions"
+        android:name="com.example.navbar.Submissions"
         tools:layout="@layout/fragment_submissions" >
         <action
             android:id="@+id/action_SubmissionsFragment_to_homeFragment"

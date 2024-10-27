@@ -7,6 +7,8 @@ android {
     namespace = "com.example.navbar"
     compileSdk = 34
 
+
+
     defaultConfig {
         applicationId = "com.example.navbar"
         minSdk = 24
@@ -49,7 +51,15 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.recyclerview)
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.kotlin.coroutines)
+    implementation(libs.retrofit)
+    implementation(libs.okhttp)
+    implementation(libs.gson)
+    implementation(libs.retrofit.converters)
 }

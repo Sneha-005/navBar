@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Badges">
-
+    android:padding="16dp">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/badgesCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Badges Count: "
+        android:textSize="18sp"
+        android:layout_marginTop="86dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/activeBadgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Badge: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/badgesCountTextView"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/upcomingBadgesTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Badges:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/activeBadgeTextView"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/upcomingBadgesContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/upcomingBadgesTitleTextView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
